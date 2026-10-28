@@ -2,7 +2,6 @@
 import Social from "./Social.vue";
 import Link from "./Link.vue";
 import Clickable from "./Clickable.vue";
-import LangSwitch from "./LangSwitch.vue";
 import NotchSection from "./NotchSection.vue";
 import { t } from "../i18n/utils/translate";
 import { locale } from "../i18n/store";
@@ -66,24 +65,14 @@ const showAttribution = import.meta.env.VITE_SHOW_ATTRIBUTION !== "false";
               >
             </Clickable>
           </div>
-          <LangSwitch />
         </div>
       </div>
       <div class="footer-credits">
         <div v-if="showAttribution" class="footer-credits-built">
           <p>
-            {{ t("original-concept-by") }}
+            Portafolio de
           </p>
-          <Clickable renderAs="div">
-            <Link
-              href="https://david-hckh.com"
-              class="footer-link children-unclickable"
-              external
-              data-cursor="circle-white"
-              data-hoversound="hover"
-              >David Heckhoff</Link
-            >
-          </Clickable>
+          <p class="footer-link">Luis Sebastián Diaz Yanguatin</p>
         </div>
         <div class="footer-credits-music">
           <p>
@@ -100,7 +89,7 @@ const showAttribution = import.meta.env.VITE_SHOW_ATTRIBUTION !== "false";
             >
           </Clickable>
         </div>
-        <p>© {{ new Date().getFullYear() }} David Heckhoff</p>
+        <p>© {{ new Date().getFullYear() }} Luis Sebastián Diaz Yanguatin</p>
       </div>
     </div>
   </footer>

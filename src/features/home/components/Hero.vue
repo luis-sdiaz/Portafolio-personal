@@ -11,7 +11,7 @@ import AppearingText from "../../../components/AppearingText.vue";
     <div class="hero-content grid">
       <div class="hero-content-inner" id="hero-content-inner">
         <div class="hero-content-copys">
-          <h1 class="hero-title">David<br />Heckhoff</h1>
+          <h1 class="hero-title">luis sebastian diaz</h1>
           <Banner class="hero-banner" :copy="t('job-title')" v-if="!preloaderVisible" animated />
         </div>
       </div>
@@ -61,8 +61,9 @@ import AppearingText from "../../../components/AppearingText.vue";
       @include mixins.landscape {
         left: 0;
         transform: translateX(0);
-        grid-column: 2 / 13;
+        grid-column: 1 / 8;
         width: fit-content;
+        align-items: flex-start;
       }
     }
 
@@ -85,9 +86,12 @@ import AppearingText from "../../../components/AppearingText.vue";
     font-weight: 900;
     letter-spacing: 0.02em;
     font-size: var(--font-size-title-lg);
+    max-width: 7ch;
+    line-height: 0.95;
 
     @include mixins.landscape {
       font-size: var(--font-size-title-lg);
+      max-width: 8ch;
     }
 
     @include mixins.landscape-large {
@@ -106,16 +110,16 @@ import AppearingText from "../../../components/AppearingText.vue";
     bottom: 0;
     right: -16px;
     z-index: 10;
-    transform: rotate(-5deg) translate(0, 65%);
+    transform: rotate(-5deg) translate(0, 110%);
 
     @include mixins.mq("sm") {
       right: -24px;
-      transform: rotate(-5deg) translate(0, 70%);
+      transform: rotate(-5deg) translate(0, 115%);
     }
 
     @include mixins.mq("lg") {
       right: -32px;
-      transform: rotate(-5deg) translate(0, 80%);
+      transform: rotate(-5deg) translate(0, 120%);
     }
   }
 }
